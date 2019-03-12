@@ -2,42 +2,53 @@
 
 This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Counting via Multi Column Convolutional Neural Network"](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhang_Single-Image_Crowd_Counting_CVPR_2016_paper.pdf)
 
-# Installation
+# environment（环境）
+  SYS：Windows  
+  python：python3.6 (python3 is ok)  
+  matlab  
+
+# Installation（必要的安装）
 1. Install pytorch
-2. Clone this repository
-  ```Shell
-  git clone https://github.com/svishwa/crowdcount-mcnn.git
-  ```
-  We'll call the directory that you cloned crowdcount-mcnn `ROOT`
+2. Install OpenCV of python
+3. Install pandas
+4. Install h5py
+5. Clone this repository  
+  We'll call the directory that you cloned crowdcount-mcnn `ROOT`  
+  把该仓库中的代码下载到本地，保存在"e:/root"文件夹下
 
-
-# Data Setup
-1. Download ShanghaiTech Dataset from   
+# Data Setup（数据准备）
+1. Download ShanghaiTech Dataset from（下载数据，下面二者选其一）   
    Dropbox:   https://www.dropbox.com/s/fipgjqxl7uj8hd5/ShanghaiTech.zip?dl=0
    
    Baidu Disk: http://pan.baidu.com/s/1nuAYslz
-2. Create Directory 
-  ```Shell
-  mkdir ROOT/data/original/shanghaitech/  
-  ```
-3. Save "part_A_final" under ROOT/data/original/shanghaitech/
-4. Save "part_B_final" under ROOT/data/original/shanghaitech/
-5. cd ROOT/data_preparation/
-
+2. Create Directory（新建文件夹） 
+  Create a new director "e:/root/data/original/shanghaitech/"
+3. Save "part_A_final" under e:/root/data/original/shanghaitech/
+4. Save "part_B_final" under e:/root/data/original/shanghaitech/
+5. cd "e:/root/crowdcount-mcnn-master/data_preparation"  
    run create_gt_test_set_shtech.m in matlab to create ground truth files for test data
-6. cd ROOT/data_preparation/
-
+6. cd "e:/root/crowdcount-mcnn-master/data_preparation"  
    run create_training_set_shtech.m in matlab to create training and validataion set along with ground truth files
 
 # Test
 1. Follow steps 1,2,3,4 and 5 from Data Setup
-2. Download pre-trained model files:
+2. Download pre-trained model files（下载预训练过的模型）:
 
-   [[Shanghai Tech A](https://www.dropbox.com/s/8bxwvr4cj4bh5d8/mcnn_shtechA_660.h5?dl=0)]
+   Shanghai Tech A  
+	 Dropbox:  
+	     https://www.dropbox.com/s/8bxwvr4cj4bh5d8/mcnn_shtechA_660.h5?dl=0  
+	 Baidu Disk:  
+	     链接：https://pan.baidu.com/s/17ETn4EUNIIOXwzkHCHTZxQ  
+       提取码：55t3 
    
-   [[Shanghai Tech B](https://www.dropbox.com/s/kqqkl0exfshsw8v/mcnn_shtechB_110.h5?dl=0)]
+   Shanghai Tech B  
+	 Dropbox:
+	     https://www.dropbox.com/s/kqqkl0exfshsw8v/mcnn_shtechB_110.h5?dl=0  
+	 Baidu Disk:
+	     链接：https://pan.baidu.com/s/1GIc3k4GH0ckey7O-6KG5iw  
+			 提取码：rblb 
    
-   Save the model files under ROOT/final_models
+   Save the model files under e:/root/final_models
    
 3. Run test.py
 
