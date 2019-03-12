@@ -4,11 +4,11 @@
 
 
 clc; clear all;
-dataset = 'A';
+dataset = 'B';
 dataset_name = ['shanghaitech_part_' dataset ];
-path = ['../data/original/shanghaitech/part_' dataset '_final/test_data/images/'];
-gt_path = ['../data/original/shanghaitech/part_' dataset '_final/test_data/ground_truth/'];
-gt_path_csv = ['../data/original/shanghaitech/part_' dataset '_final/test_data/ground_truth_csv/'];
+path = ['e:/root/data/original/shanghaitech/part_' dataset '_final/test_data/images/'];
+gt_path = ['e:/root/data/original/shanghaitech/part_' dataset '_final/test_data/ground_truth/'];
+gt_path_csv = ['e:/root/data/original/shanghaitech/part_' dataset '_final/test_data/ground_truth_csv/'];
 
 mkdir(gt_path_csv )
 if (dataset == 'A')

@@ -9,15 +9,15 @@ clc; clear all;
 seed = 95461354;
 rng(seed)
 N = 9;
-dataset = 'A';
+dataset = 'B';
 dataset_name = ['shanghaitech_part_' dataset '_patches_' num2str(N)];
-path = ['../data/original/shanghaitech/part_' dataset '_final/train_data/images/'];
-output_path = '../data/formatted_trainval/';
+path = ['e:/root/data/original/shanghaitech/part_' dataset '_final/train_data/images/'];
+output_path = 'e:/root/data/formatted_trainval/';
 train_path_img = strcat(output_path, dataset_name,'/train/');
 train_path_den = strcat(output_path, dataset_name,'/train_den/');
 val_path_img = strcat(output_path, dataset_name,'/val/');
 val_path_den = strcat(output_path, dataset_name,'/val_den/');
-gt_path = ['../data/original/shanghaitech/part_' dataset '_final/train_data/ground_truth/'];
+gt_path = ['e:/root/data/original/shanghaitech/part_' dataset '_final/train_data/ground_truth/'];
 
 mkdir(output_path)
 mkdir(train_path_img);
