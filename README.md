@@ -21,7 +21,7 @@ This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Cou
    Dropbox:   https://www.dropbox.com/s/fipgjqxl7uj8hd5/ShanghaiTech.zip?dl=0
    
    Baidu Disk: http://pan.baidu.com/s/1nuAYslz
-2. Create Directory（新建文件夹） 
+2. Create Directory（新建文件夹）  
   Create a new director "e:/root/data/original/shanghaitech/"
 3. Save "part_A_final" under e:/root/data/original/shanghaitech/
 4. Save "part_B_final" under e:/root/data/original/shanghaitech/
@@ -32,21 +32,21 @@ This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Cou
 
 # Test
 1. Follow steps 1,2,3,4 and 5 from Data Setup
-2. Download pre-trained model files（下载预训练过的模型）:
+2. Download pre-trained model files（下载预训练过的模型）:  
 
    Shanghai Tech A  
 	 Dropbox:  
 	     https://www.dropbox.com/s/8bxwvr4cj4bh5d8/mcnn_shtechA_660.h5?dl=0  
 	 Baidu Disk:  
 	     链接：https://pan.baidu.com/s/17ETn4EUNIIOXwzkHCHTZxQ  
-       提取码：55t3 
+             提取码：55t3 
    
    Shanghai Tech B  
 	 Dropbox:
 	     https://www.dropbox.com/s/kqqkl0exfshsw8v/mcnn_shtechB_110.h5?dl=0  
-	 Baidu Disk:
+	 Baidu Disk:  
 	     链接：https://pan.baidu.com/s/1GIc3k4GH0ckey7O-6KG5iw  
-			 提取码：rblb 
+	     提取码：rblb 
    
    Save the model files under e:/root/final_models
    
@@ -56,6 +56,12 @@ This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Cou
 	
 	b. Errors are saved in  output directory
 
+4. Run count_my_image.py  
+    a. Prepare your image for crowd counting  
+    	Create director "e:/my_data", which is called "DATA_ROOT". Create new directors under "DATA_ROOT" and name your new directors any name you like. Put your images shoot by phone or download from Internet in your new directors.  
+        新建文件夹“e:/my_data”，在该文件夹下新建你自己的文件夹，你可以给这些文件夹起任意你喜欢的名字。然后把你要测试的图片放到这些文件夹下。  
+    b. Run count_my_imang.py  
+        This program will show you the estimate count of every single image.
 # Training
 1. Follow steps 1,2,3,4 and 6 from Data Setup
 2. Run train.py
