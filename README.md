@@ -1,4 +1,4 @@
-# Single Image Crowd Counting via Multi Column Convolutional Neural Network
+# Single Image Crowd Counting via Multi Column Convolutional Neural Network（基于多列卷积神经网络的单一图像人流计数）
 
 This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Counting via Multi Column Convolutional Neural Network"](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhang_Single-Image_Crowd_Counting_CVPR_2016_paper.pdf)
 
