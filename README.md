@@ -30,7 +30,7 @@ This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Cou
 6. cd "e:/root/crowdcount-mcnn-master/data_preparation"  
    run create_training_set_shtech.m in matlab to create training and validataion set along with ground truth files  
    
-note:
+note:  
     数据集包括“A”和“B”两个部分，因此5和6中运行的matlab脚本都需要执行两次，第一次准备“A”的数据，然后修改代码，把代码中数据集的名字改成“B”再执行一次。  
     There are two dataset, "A" and "B". So in step_5 and step_6, you should run the script twice. First, you prepare the data_A, then alter the data_set_name in code file and run it to prepare the data_B.  
     
